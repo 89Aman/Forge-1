@@ -1,0 +1,53 @@
+<!-- SkillSnap Main Layout -->
+<div class="min-h-screen flex flex-col bg-neutral-950">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-neutral-900/80 backdrop-blur-md border-b border-neutral-700/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Brand Name -->
+        <a routerLink="/" class="flex items-center group">
+          <span class="text-xl font-bold text-white">SkillSnap</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <div class="flex items-center gap-6">
+          <a routerLink="/" routerLinkActive="text-neutral-100" [routerLinkActiveOptions]="{exact: true}"
+             class="text-neutral-400 hover:text-white transition-colors font-medium">
+            Home
+          </a>
+          <a routerLink="/exam" routerLinkActive="text-neutral-100"
+             class="text-neutral-400 hover:text-white transition-colors font-medium">
+            Take Exam
+          </a>
+          <a routerLink="/verify" routerLinkActive="text-neutral-100"
+             class="text-neutral-400 hover:text-white transition-colors font-medium">
+            Verify
+          </a>
+          <a routerLink="/exam"
+             class="px-5 py-2 bg-white hover:bg-neutral-100 text-neutral-900 font-semibold rounded-lg shadow-lg shadow-white/10 hover:shadow-white/20 transition-all">
+            Get Certified
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-1 pt-16">
+    <router-outlet />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-900/80 border-t border-neutral-700/50 py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-3">
+          <span class="text-neutral-400">SkillSnap &copy; {{ currentYear }}</span>
+        </div>
+        <p class="text-neutral-500 text-sm">
+          Powered by <span class="text-neutral-300">Google Gemini</span> &amp; <span class="text-neutral-300">Cloud SQL</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>

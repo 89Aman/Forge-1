@@ -1,0 +1,47 @@
+/* Exam Component Styles - Monochromatic */
+
+textarea {
+  tab-size: 4;
+  -moz-tab-size: 4;
+}
+
+textarea::placeholder {
+  color: #525252;
+}
+
+/* Custom scrollbar for code editor - Monochromatic */
+textarea::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #525252;
+}
+
+/* Line numbers effect (future enhancement) */
+.line-numbers {
+  counter-reset: line;
+}
+
+.line-numbers > span {
+  counter-increment: line;
+}
+
+.line-numbers > span::before {
+  content: counter(line);
+  display: inline-block;
+  width: 3em;
+  padding-right: 1em;
+  text-align: right;
+  color: #525252;
+}

@@ -1,0 +1,276 @@
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+  <!-- Background Effects - Monochromatic -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neutral-500/10 rounded-full blur-3xl animate-pulse"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neutral-400/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-neutral-500/5 to-neutral-400/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+    <!-- Badge -->
+    <div class="inline-flex items-center gap-2 px-4 py-2 bg-neutral-800/50 border border-neutral-700/50 rounded-full mb-8">
+      <span class="w-2 h-2 bg-neutral-400 rounded-full animate-pulse"></span>
+      <span class="text-neutral-300 text-sm font-medium">Powered by Google Gemini AI</span>
+    </div>
+
+    <!-- Main Heading -->
+    <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+      Prove Your <span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-400">Skills</span>
+      <br />Not Your Resume
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-xl md:text-2xl text-neutral-400 mb-8 max-w-3xl mx-auto leading-relaxed">
+      Defying the gravity of traditional gatekeeping with 
+      <span class="text-neutral-200">AI-verified skill proof</span>. 
+      We don't care about your pedigree — we only care about your code.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+      <a routerLink="/exam" 
+         class="group px-8 py-4 bg-white hover:bg-neutral-100 text-neutral-900 font-bold text-lg rounded-xl shadow-2xl shadow-white/10 hover:shadow-white/20 transition-all transform hover:scale-105 flex items-center gap-3">
+        <span>Start Coding Challenge</span>
+        <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+      <a routerLink="/verify" 
+         class="px-8 py-4 bg-neutral-800/50 hover:bg-neutral-700/50 text-white font-semibold text-lg rounded-xl border border-neutral-600/50 hover:border-neutral-500/50 transition-all flex items-center gap-3">
+        <span class="material-icons">search</span>
+        <span>Verify Certificate</span>
+      </a>
+    </div>
+
+    <!-- Terminal Preview -->
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-neutral-900/80 rounded-2xl border border-neutral-700/50 shadow-2xl overflow-hidden">
+        <!-- Terminal Header -->
+        <div class="flex items-center gap-2 px-4 py-3 bg-neutral-800/50 border-b border-neutral-700/50">
+          <div class="w-3 h-3 rounded-full bg-neutral-600"></div>
+          <div class="w-3 h-3 rounded-full bg-neutral-500"></div>
+          <div class="w-3 h-3 rounded-full bg-neutral-400"></div>
+          <span class="ml-4 text-neutral-400 text-sm font-mono">skill_assessment.py</span>
+        </div>
+        <!-- Terminal Content -->
+        <div class="p-6 font-mono text-left">
+          <div class="text-neutral-500 text-sm mb-2"># Write a function that sums two numbers</div>
+          <div class="text-neutral-300">def <span class="text-neutral-100">sum</span><span class="text-white">(a, b):</span></div>
+          <div class="text-neutral-200 pl-8">return <span class="text-white">a + b</span></div>
+          <div class="mt-4 flex items-center gap-2">
+            <span class="text-neutral-300">✓</span>
+            <span class="text-neutral-400">Test passed: sum(5, 10) == 15</span>
+          </div>
+          <div class="mt-2 flex items-center gap-2">
+            <span class="text-neutral-300">🤖</span>
+            <span class="text-neutral-400">AI Audit: O(1) time complexity - "Clean & Efficient"</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Problem Section -->
+<section class="py-24 bg-neutral-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">The Problem with Traditional Hiring</h2>
+      <p class="text-neutral-400 text-lg max-w-2xl mx-auto">
+        Traditional hiring is weighed down by heavy, outdated systems that hold talented self-taught developers back.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Trust Gap -->
+      <div class="bg-neutral-800/30 border border-neutral-700/50 rounded-2xl p-8 hover:border-neutral-500/50 transition-colors group">
+        <div class="w-14 h-14 bg-neutral-700/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neutral-600/30 transition-colors">
+          <span class="material-icons text-neutral-300 text-2xl">shield</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Trust Gap</h3>
+        <p class="text-neutral-400">Employers don't trust self-claims. "I know Python" means nothing without proof that can be verified.</p>
+      </div>
+
+      <!-- Cost Barrier -->
+      <div class="bg-neutral-800/30 border border-neutral-700/50 rounded-2xl p-8 hover:border-neutral-500/50 transition-colors group">
+        <div class="w-14 h-14 bg-neutral-700/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neutral-600/30 transition-colors">
+          <span class="material-icons text-neutral-300 text-2xl">payments</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Cost Barrier</h3>
+        <p class="text-neutral-400">Real certifications cost hundreds of dollars. Most self-taught developers can't afford expensive exam fees.</p>
+      </div>
+
+      <!-- Opacity -->
+      <div class="bg-neutral-800/30 border border-neutral-700/50 rounded-2xl p-8 hover:border-neutral-500/50 transition-colors group">
+        <div class="w-14 h-14 bg-neutral-700/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neutral-600/30 transition-colors">
+          <span class="material-icons text-neutral-300 text-2xl">visibility_off</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3">Opacity</h3>
+        <p class="text-neutral-400">A "Passed" badge doesn't show how you solved the problem. Employers can't see your actual thinking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Solution Section -->
+<section class="py-24">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">How SkillSnap Works</h2>
+      <p class="text-neutral-400 text-lg max-w-2xl mx-auto">
+        A frictionless, weightless verification layer that lets talent rise purely on merit.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-4 gap-6">
+      <!-- Step 1: Code -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-neutral-700/20 to-neutral-800/10 border border-neutral-600/30 rounded-2xl p-6 h-full">
+          <div class="w-12 h-12 bg-neutral-200 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-white/10">
+            <span class="text-neutral-900 font-bold text-lg">1</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Code</h3>
+          <p class="text-neutral-400 text-sm">Solve live algorithmic challenges in a secure sandbox environment.</p>
+        </div>
+        <div class="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-neutral-500 to-transparent"></div>
+      </div>
+
+      <!-- Step 2: Verify -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-neutral-700/20 to-neutral-800/10 border border-neutral-600/30 rounded-2xl p-6 h-full">
+          <div class="w-12 h-12 bg-neutral-300 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-white/10">
+            <span class="text-neutral-900 font-bold text-lg">2</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Verify</h3>
+          <p class="text-neutral-400 text-sm">Backend validates functionality with instant Pass/Fail results.</p>
+        </div>
+        <div class="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-neutral-500 to-transparent"></div>
+      </div>
+
+      <!-- Step 3: Audit -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-neutral-700/20 to-neutral-800/10 border border-neutral-600/30 rounded-2xl p-6 h-full">
+          <div class="w-12 h-12 bg-neutral-400 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-white/10">
+            <span class="text-neutral-900 font-bold text-lg">3</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Audit</h3>
+          <p class="text-neutral-400 text-sm">Google Gemini AI reviews code for complexity and style like a Senior Engineer.</p>
+        </div>
+        <div class="hidden md:block absolute top-1/2 -right-3 w-6 h-0.5 bg-gradient-to-r from-neutral-500 to-transparent"></div>
+      </div>
+
+      <!-- Step 4: Proof -->
+      <div>
+        <div class="bg-gradient-to-br from-neutral-700/20 to-neutral-800/10 border border-neutral-600/30 rounded-2xl p-6 h-full">
+          <div class="w-12 h-12 bg-neutral-500 rounded-xl flex items-center justify-center mb-4 shadow-lg shadow-white/10">
+            <span class="text-white font-bold text-lg">4</span>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Proof</h3>
+          <p class="text-neutral-400 text-sm">Mint a verifiable certificate with your exact code snapshot on Cloud SQL.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-24 bg-neutral-900/50">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Built for <span class="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 to-neutral-400">Transparency</span>
+        </h2>
+        
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-neutral-700/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="material-icons text-neutral-300">verified_user</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-1">Anti-Cheat Verification</h3>
+              <p class="text-neutral-400">We don't just say "Pass". We show the employer the exact code. If AI-generated nonsense was used, the snapshot reveals it.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-neutral-700/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="material-icons text-neutral-300">smart_toy</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-1">AI Code Review</h3>
+              <p class="text-neutral-400">Get instant feedback on code quality, not just correctness. Understand Big-O complexity and style improvements.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="w-10 h-10 bg-neutral-700/30 rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="material-icons text-neutral-300">cloud</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-1">Cloud Native</h3>
+              <p class="text-neutral-400">Built to scale on Google Cloud infrastructure. Certificates are globally verifiable and persistent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <!-- Certificate Preview -->
+        <div class="bg-gradient-to-br from-neutral-800 to-neutral-900 rounded-2xl border border-neutral-700/50 p-8 shadow-2xl">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-16 h-16 bg-gradient-to-br from-neutral-300 to-neutral-500 rounded-2xl flex items-center justify-center">
+              <span class="material-icons text-neutral-900 text-3xl">workspace_premium</span>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-white">SkillSnap Certificate</h4>
+              <p class="text-neutral-400">Python Assessment</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="flex justify-between items-center py-2 border-b border-neutral-700/50">
+              <span class="text-neutral-400">Certificate ID</span>
+              <span class="text-white font-mono">A1B2C3D4</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-700/50">
+              <span class="text-neutral-400">Candidate</span>
+              <span class="text-white">John Doe</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-neutral-700/50">
+              <span class="text-neutral-400">AI Badge</span>
+              <span class="px-3 py-1 bg-neutral-700/50 text-neutral-200 rounded-full text-sm font-medium">Python Ninja 🥷</span>
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <span class="text-neutral-400">Verified</span>
+              <span class="flex items-center gap-2 text-neutral-200">
+                <span class="material-icons text-sm">check_circle</span>
+                Authentic
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="absolute -top-4 -right-4 w-24 h-24 bg-neutral-500/10 rounded-full blur-2xl"></div>
+        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-neutral-400/10 rounded-full blur-2xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-24">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+      Ready to Prove Your Skills?
+    </h2>
+    <p class="text-xl text-neutral-400 mb-8">
+      Take the challenge, get AI-audited, and earn a verifiable certificate in minutes.
+    </p>
+    <a routerLink="/exam" 
+       class="inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-neutral-100 text-neutral-900 font-bold text-xl rounded-2xl shadow-2xl shadow-white/10 hover:shadow-white/20 transition-all transform hover:scale-105">
+      <span class="material-icons text-2xl">code</span>
+      <span>Start Your Assessment</span>
+    </a>
+  </div>
+</section>
