@@ -13,7 +13,7 @@
 [Demo](#-quick-start) • [Features](#-key-features) • [Architecture](#️-architecture) • [API Docs](#-api-documentation)
 
 </div>
-![iMAGE](https://github.com/89Aman/SkillSnap/blob/main/image.png)
+
 
 
 ## 🌌 The "Antigravity" Theme
