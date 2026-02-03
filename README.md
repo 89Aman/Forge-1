@@ -13,10 +13,10 @@
 [Demo](#-quick-start) • [Features](#-key-features) • [Architecture](#️-architecture) • [API Docs](#-api-documentation)
 
 </div>
-![iMAGE](https://github.com/89Aman/SkillSnap/blob/main/image.png)
-
 
 ## 🌌 The "Antigravity" Theme
+
+![SkillSnap Demo](https://github.com/89Aman/SkillSnap/blob/main/image.png)
 
 Traditional hiring is weighed down by heavy, outdated systems. Degree bias, resume keywords, and expensive certifications create massive "gravity" that holds talented self-taught developers down.
 
